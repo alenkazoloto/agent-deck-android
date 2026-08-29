@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Only the update downloads, and only the one subdirectory they land in. A provider rooted at
+  the cache dir would put every other cached byte behind a grantable URI as well, for one file
+  that has to leave the app.
+-->
+<paths>
+    <cache-path name="updates" path="updates/" />
+</paths>
