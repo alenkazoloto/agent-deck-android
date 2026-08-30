@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  A launcher shortcut icon is drawn as-is, on whatever the user's wallpaper is behind the
+  long-press sheet — so it carries its own disc rather than being a bare silhouette like the
+  status-bar mark, which would be invisible on half of them.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#1B2430"
+        android:pathData="M24,24m-24,0a24,24 0 1,1 48,0a24,24 0 1,1 -48,0" />
+    <path
+        android:fillColor="#9ECE6A"
+        android:pathData="M22,13h4v9h9v4h-9v9h-4v-9h-9v-4h9z" />
+</vector>
