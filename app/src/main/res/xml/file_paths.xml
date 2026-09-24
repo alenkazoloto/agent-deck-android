@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Only the update downloads and shared conversations, each in its own subdirectory. A provider
+  rooted at the cache dir would put every other cached byte behind a grantable URI as well, for
+  the few files that have to leave the app.
+-->
+<paths>
+    <cache-path name="updates" path="updates/" />
+    <cache-path name="exports" path="exports/" />
+</paths>
