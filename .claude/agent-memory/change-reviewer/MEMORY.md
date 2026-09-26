@@ -1,0 +1,4 @@
+- [Queue mutators don't restart the pump](pattern-queue-mutators-dont-restart-the-pump.md) — a self-terminating drain loop plus writers that only `writeQueue` strands committed prompts.
+- [A null key collapses per-conversation guards](pattern-null-key-collapses-per-conversation-guards.md) — new chats all carry `key == null`, so per-key filters and `== item.key` merge every project.
+- [New composer state misses its companion paths](pattern-new-composer-state-misses-its-companion-paths.md) — check `switchTo`, `editQueued`, the blank-prompt guard and the clamp whenever DeckState grows a field.
+- [Single-slot local cleared on dispose](pattern-single-slot-local-cleared-on-dispose.md) — AnimatedContent overlap: outgoing screen onDispose zeroes the incoming screen's registration.
