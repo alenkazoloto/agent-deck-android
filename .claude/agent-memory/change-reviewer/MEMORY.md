@@ -1,0 +1,10 @@
+- [Queue mutators don't restart the pump](pattern-queue-mutators-dont-restart-the-pump.md) — a self-terminating drain loop plus writers that only `writeQueue` strands committed prompts.
+- [A null key collapses per-conversation guards](pattern-null-key-collapses-per-conversation-guards.md) — new chats all carry `key == null`, so per-key filters and `== item.key` merge every project.
+- [New composer state misses its companion paths](pattern-new-composer-state-misses-its-companion-paths.md) — check `switchTo`, `editQueued`, the blank-prompt guard and the clamp whenever DeckState grows a field.
+- [Phone route inlines a desk-async source](pattern-phone-route-inlines-desk-async-source.md) — no deadline; one slow source (symbols) delays or drops the git/chat/file rows beside it.
+- [Single-slot local cleared on dispose](pattern-single-slot-local-cleared-on-dispose.md) — AnimatedContent overlap: outgoing screen onDispose zeroes the incoming screen's registration.
+- [Preview-token write flows drift](pattern-preview-token-flows-lose-selection-and-gap.md) — stale re-open must keep picks; subset recompute after token; nonModal write gap.
+- [Worktree project resolution split](pattern-worktree-project-resolution-split.md) — phone routes use owning-root fallback; scheduler hooks match basePath exactly, so state is lost between them.
+- [Ledger re-runs ambiguous failures](pattern-ledger-reruns-ambiguous-failure.md) — FAILED from a timeout may have posted; op-id ledgers re-run it on poll/resend.
+- [Send hook skips schedule fields](pattern-send-hook-skips-schedule-fields.md) — a key-specific early return in `send` runs scheduled/afterRun prompts now.
+- [Slow answer drops the finished load](pattern-slow-answer-drops-finished-load.md) — in-flight map evicts on completion; a late "try again" re-runs git and is SLOW again.
