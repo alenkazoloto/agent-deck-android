@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Long-press the launcher icon. Only the fixed half lives here: "the most recent thread" is a
+  fact about the fleet and is pushed at runtime by `data/AppShortcuts.kt`, because a static
+  shortcut can only name a destination the build already knew about.
+
+  The intent is the same `agentdeck://` URI a notification, the widget and the tile use — one
+  route into the app rather than a fourth set of extras that can disagree with the other three.
+-->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="new-chat"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_new_chat"
+        android:shortcutShortLabel="@string/shortcut_new_chat_short"
+        android:shortcutLongLabel="@string/shortcut_new_chat_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="agentdeck://new"
+            android:targetPackage="dev.agentdeck.companion"
+            android:targetClass="dev.agentdeck.companion.MainActivity" />
+    </shortcut>
+</shortcuts>
