@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug only. FixtureInstaller runs at process start and is what lets
+     scripts/deck-screenshot.sh paint any screen without a paired phone, a running IDE or the
+     bridge port. It is absent from every release build. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <provider
+            android:name="dev.agentdeck.companion.fixture.FixtureInstaller"
+            android:authorities="${applicationId}.fixtures"
+            android:exported="false"
+            android:enabled="true" />
+    </application>
+</manifest>
